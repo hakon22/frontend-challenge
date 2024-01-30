@@ -1,0 +1,33 @@
+:root {
+  --white: #FFF;
+  --blue: #2196F3;
+  --dark-blue: #1E88E5;
+}
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@mixin heart($image, $vw, $position-x: 75%, $position-y: 75%) {
+  content: url($image);
+  width: $vw;
+  height: $vw;
+  position: absolute;
+  left: $position-x;
+  top: $position-y;
+  cursor: pointer;
+}
